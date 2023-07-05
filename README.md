@@ -43,3 +43,12 @@
     - notion에 api문서를 작성하여 프론트 개발자와 소통
 ---
 
+
+### API문서
+![이미지1](https://github.com/jjikky/muggle_backend/blob/main/readme_img/1.png?raw=true)
+![이미지2](https://github.com/jjikky/muggle_backend/blob/main/readme_img/2.png?raw=true)
+![이미지3](https://github.com/jjikky/muggle_backend/blob/main/readme_img/3.png?raw=true)
+
+
+### 개발일정관리
+![이미지4](https://github.com/jjikky/muggle_backend/blob/main/readme_img/4.png?raw=true)
