@@ -1,0 +1,18 @@
+header.header
+    .header__column
+        a(href=routes.home)
+            p home
+    .header__column
+        ul
+            if !loggedUser
+                li
+                    a(href=routes.join) Join
+                li
+                    a(href=routes.login) Log In
+            else 
+                li
+                    a(href=`/order${routes.uploadOrder}`) Upload
+                li
+                    a(href=routes.userDetail) Profile
+                li
+                    a(href=routes.logout) Log Out 

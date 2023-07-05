@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`/taste/read-reply`, method="post")
+            input(type="string", placeholder="login_uid", name="login_uid",required=true)
+            input(type="string", placeholder="comment_id", name="comment_id",required=true)
+            input(type="string", placeholder="choice", name="choice",required=true)
+            input(type="string", placeholder="reply_id", name="reply_id")
+            input(type="submit", value="submit") 

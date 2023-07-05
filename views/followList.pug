@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`/users/follow-list`, method="post")
+            input(type="string", placeholder="유저아이디", name="uid",required=true)
+            input(type="string", placeholder="로그인아이디", name="login_uid",required=true)
+            input(type="string", placeholder="1or2", name="value",required=true)
+            input(type="string", placeholder="choice(1,2)", name="choice",required=true)
+            input(type="string", placeholder="last_uid", name="last_uid")
+            input(type="submit", value="submit") 

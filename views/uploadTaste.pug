@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`/taste${routes.uploadTaste}`, method="post", enctype="multipart/form-data")
+            input(type="string", placeholder="title", name="title",required=true)
+            textarea(name="description", placeholder="description",required=true)
+            input(type="string", placeholder="hash", name="hash")
+            input(type="string", placeholder="link", name="link")
+            input(type="string", placeholder="latitude", name="latitude")
+            input(type="string", placeholder="longitude", name="longitude")
+            input(type="string", placeholder="dimensions", name="dimensions")
+            input(type="string", placeholder="location", name="location")
+            div.fileUpload
+                label(for="file") Image File
+                input(type="file", id="file", name="image", accept="image/*,video/*" multiple/)
+            input(type="submit", value="Upload Order") 

@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    .form-container
+        form(action="/userinfo-depth", method ="post")
+            input(type="string", name="login_uid", placeholder="login_uid",required=true)
+            input(type="submit", value="submit") 

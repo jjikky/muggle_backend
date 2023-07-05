@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`/taste${routes.updateTaste}`, method="post")
+            input(type="string", placeholder="게시물아이디", name="taste_id",required=true)
+            input(type="string", placeholder="title", name="title",required=true)
+            textarea(name="description", placeholder="description")
+            textarea(name="link", placeholder="link")
+            input(type="string", placeholder="hash", name="hash")
+            input(type="string", placeholder="location", name="location")
+            input(type="submit", value="Upload Order") 

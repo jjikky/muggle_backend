@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`/users/avatar`, method="post", enctype="multipart/form-data")
+            input(type="string", placeholder="유저아이디", name="login_uid",required=true)
+            div.fileUpload
+                label(for="file") Image File
+                input(type="file", id="file", name="avatar", accept="image/*")
+            input(type="submit", value="Upload avatar") 

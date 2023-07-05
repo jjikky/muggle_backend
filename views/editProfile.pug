@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`/users/edit-profile`, method="post", enctype="multipart/form-data")
+            input(type="string", placeholder="로그인유저아이디", name="login_uid",required=true)
+            input(type="string", placeholder="firstName", name="firstName",required=true)
+            input(type="string", placeholder="lastName", name="lastName",required=true)
+            input(type="string", placeholder="nickname", name="nickname",required=true)
+            textarea(name="intro", placeholder="intro")
+            input(type="string", placeholder="instagramId", name="instagramId")
+            input(type="string", placeholder="gender", name="gender")
+            input(type="number", placeholder="birth", name="birth")
+            div.fileUpload
+                label(for="file") Image File
+                input(type="file", id="file", name="avatar", accept="image/*")
+            input(type="submit", value="Edit Profile") 

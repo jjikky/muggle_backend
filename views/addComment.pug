@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    .form-container
+        form(action="/taste/add-comment", method ="post")
+            input(type="string", name="comment", placeholder="comment",required=true)
+            input(type="string", name="comment_id", placeholder="댓글id",required=true)
+            input(type="string", name="taste_id", placeholder="게시글 id",required=true)
+            input(type="string", name="type", placeholder="type",required=true)
+            input(type="submit", value="submit") 

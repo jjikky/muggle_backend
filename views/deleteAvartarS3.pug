@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`/api/delete-avatar`, method="post")
+            input(type="string", placeholder="유저아이디", name="login_uid",required=true)
+            input(type="submit", value="test") 

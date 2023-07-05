@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`/api/bookmark`, method="post")
+            input(type="string", placeholder="유저아이디", name="login_uid",required=true)
+            input(type="string", placeholder="게시물아이디", name="taste_id",required=true)
+            input(type="string", placeholder="1or0", name="value",required=true)
+            input(type="submit", value="bookmark") 

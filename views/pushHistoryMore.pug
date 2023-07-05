@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    .form-container
+        form(action="/users/push-history-more", method="post")
+            input(type="string", placeholder="login_uid", name="login_uid",required=true)
+            input(type="string", placeholder="push_id", name="push_id",required=true)
+            input(type="submit", value="push") 

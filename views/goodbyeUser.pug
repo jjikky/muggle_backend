@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`/api/goodbye-user`, method="post")
+            input(type="string", placeholder="login_uid", name="login_uid",required=true)
+            input(type="submit", value="delete user") 

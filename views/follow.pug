@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`/api/follow`, method="post")
+            input(type="string", placeholder="user_id", name="login_uid",required=true)
+            input(type="string", placeholder="팔로우할 사람id", name="uid",required=true)
+            input(type="string", placeholder="1or0", name="value",required=true)
+            input(type="submit", value="Upload Order") 

@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`/api/test`, method="post", enctype="multipart/form-data")
+            div.fileUpload
+                label(for="file") Image File
+                input(type="file", id="file", name="image", accept="image/*,video/*" multiple/)
+            input(type="submit", value="Upload Order")

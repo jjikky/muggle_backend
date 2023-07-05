@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`${routes.userinfo}`, method ="post")
+            input(type="string", name="phoneNumber", placeholder="phoneNumber",required=true)
+            input(type="string", name="uid", placeholder="uid",required=true)
+            input(type="string", name="firstName", placeholder="firstName",required=true)
+            input(type="string", name="lastName", placeholder="lastName",required=true)
+            input(type="string", name="nickname", placeholder="nickname",required=true)
+            input(type="submit", value="submit") 

@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`/users/push-flag`, method="post")
+            input(type="string", placeholder="login_uid", name="login_uid",required=true)
+            input(type="submit", value="login_uid") 

@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`/api/hashtag2`, method="post")
+            input(type="string", placeholder="text", name="hash",required=true)
+            input(type="string", placeholder="마지막게시물", name="taste_id",required=true)
+            input(type="submit", value="search") 

@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`/api/post-others-taste`, method="post")
+            input(type="string", placeholder="taste_id", name="taste_id",required=true)
+            input(type="submit", value="submit") 

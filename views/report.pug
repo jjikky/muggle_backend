@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`/api/report`, method="post")
+            input(type="string", placeholder="login_uid", name="login_uid",required=true)
+            input(type="string", placeholder="게시물아이디", name="taste_id",required=true)
+            input(type="string", placeholder="신고내용", name="text",required=true)
+            input(type="submit", value="test") 

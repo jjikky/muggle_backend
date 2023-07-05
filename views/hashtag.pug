@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`/api/hashtag`, method="post")
+            input(type="string", placeholder="text", name="hash",required=true)
+            input(type="submit", value="search") 

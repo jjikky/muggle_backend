@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`/api/version`, method="post")
+            input(type="string", placeholder="client_version", name="client_version",required=true)
+            input(type="submit", value="submit") 

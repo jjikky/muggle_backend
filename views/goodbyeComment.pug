@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`/api/goodbye-comment`, method="post")
+            input(type="string", placeholder="댓글아이디", name="comment_id",required=true)
+            input(type="submit", value="delete comment")

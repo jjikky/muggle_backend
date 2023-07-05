@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`/api/delete-taste-image`, method="post")
+            input(type="string", placeholder="게시물아이디", name="taste_id",required=true)
+            input(type="submit", value="test") 

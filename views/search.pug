@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`/api/search`, method="post")
+            input(type="string", placeholder="login_uid", name="login_uid",required=true)
+            input(type="string", placeholder="search", name="search",required=true)
+            input(type="string", placeholder="value", name="value",required=true)
+            input(type="submit", value="search")

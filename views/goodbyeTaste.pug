@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`/api/goodbye-taste`, method="post")
+            input(type="string", placeholder="게시글", name="taste_id",required=true)
+            input(type="submit", value="delete taste") 

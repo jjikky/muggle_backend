@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    .form-container
+        form(action=`/api/like-comment`, method="post")
+            input(type="string", placeholder="유저아이디", name="login_uid",required=true)
+            input(type="string", placeholder="댓글아이디", name="comment_id",required=true)
+            input(type="number", placeholder="1or0", name="value",required=true)
+            input(type="submit", value="like-comment") 
